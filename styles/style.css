@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    text-decoration: none;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    gap: 24px;
+}
+
+:root{
+  --max-width : 1020px;
+  --bg-color: #f7f7f7;
+  --second-color: rgb(254, 163, 1);
+  --text-color: rgb(17, 17, 17);
+  --fot-color: rgb(1, 172, 253);
+}
+
+
+body{
+    background-color: var(--bg-color);
+}
+
+.header{
+    width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.logo{
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo-img img{
+    width: 30px;
+    margin-right: -10px;
+}
+
+.navber a{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn{
+    padding: 8px 24px;
+    border: none;
+    border-radius: 0.6rem;
+}
+
+.header-btn{
+    background-color: var(--second-color);
+}
+
+.header-btn a{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.menu-icon
+{
+    font-size: 36px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px){
+   .logo-tittle,
+   .navber a,
+   .header-btn{
+    display: none;
+   }
+
+   .menu-icon
+{
+    display: block;
+}
+
+
+   .header{
+    width: 500px;
+    margin: auto;
+    padding: 1.2rem 1rem;
+    border-bottom: 0.5px solid rgb(254, 163, 1);
+   }
+}
